@@ -31,11 +31,19 @@ angular
         controllerAs: 'about'
       })
       .when('/monuments', {
-        templateUrl: 'views/monuments.html',
-        controller: 'MonumentsCtrl',
-        controllerAs: 'monCtl'
+        templateUrl: 'views/monuments-index.html',
+        controller: 'MonumentIndexController',
+        controllerAs: 'MIVM'
+      })
+      .when('/monuments/:id', {
+        templateUrl: 'views/monumentsShow.html',
+        controller: 'MonShCtrl',
+        controllerAs: 'monSCtl'
       })
       .otherwise({
         redirectTo: '/'
       });
+      // .config(function($logProvider){
+      //   $logProvider.debugEnabled(true);
+      // });
   });

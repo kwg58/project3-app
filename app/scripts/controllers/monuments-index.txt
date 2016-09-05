@@ -1,0 +1,50 @@
+'use strict';
+
+/**
+* @ngdoc function
+* @name p3App.controller:MonumentIndexController
+* @description
+* # MonumentsCtrl
+* Controller of the p3App
+*/
+
+// function MonIndexCtrlFunction(monumentFactory) {
+//   console.log('enter index controller function');
+//   var data = monumentFactory.GetMonuments();
+//   console.log('Monument: ' + data);
+// }
+
+(function() {
+  angular.module('p3App')
+  .controller('MonumentIndexController', [
+    'MonumentFactory',
+    '$state',
+    '$stateParams',
+    '$http',
+    '$scope',
+    '$timeout',
+    GetMonuments
+  ]);
+  // function ($scope, MonumentFactory) {
+
+  // $scope.status;
+  // $scope.monuments;
+  //
+  // GetMonuments();
+
+  function GetMonuments() {
+    var vm = this;
+    MonumentFactory.get().$promise.then(function(response) {
+      vm.monuments = response;
+    });
+
+    // monumentFactory.GetMonuments()
+    // .then (function (response) {
+    //   $scope.monuments = response.data;
+    // }, function (error) {
+    //   $scope.status = 'Index Error: ' + error.message;
+    // });
+  }
+  // }
+  // ]);
+})();

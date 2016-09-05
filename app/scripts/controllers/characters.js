@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name p3App.controller:MonumentsCtrl
+ * @name p3App.controller:CharactersCtrl
  * @description
- * # MonumentsCtrl
+ * # CharactersCtrl
  * Controller of the p3App
  */
 angular.module('p3App')
-  .controller('MonumentsCtrl', function () {
+  .controller('CharactersCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
