@@ -11,6 +11,7 @@
 function GetMonuments(MonumentFactory) {
   // var vm = this;
   var monumentsList = MonumentFactory.GetMonuments;
+  console.log('Monuments: ' + monumentsList);
   return monumentsList;
   // MonumentFactory.get().$promise.then(function(response) {
   //   console.log(response);

@@ -13,12 +13,13 @@ function GetMonuments( $http ) {
     method: 'GET',
     url: 'https://pokemonuments.herokuapp.com/monuments.json'
   }).success(function(data){
-    // console.log(data);
+    console.log(data);
     return data;
   }).error(function(){
     // alert('error');
     return null ;
   });
+
 }
 
 
@@ -29,7 +30,6 @@ function GetMonuments( $http ) {
     '$http',
     GetMonuments
   ]);
-
 
 
 
