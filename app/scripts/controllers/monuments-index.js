@@ -13,7 +13,7 @@
   .controller('MonumentIndexController', [
     'MonumentFactory',
     GetMonuments
-  ])
+  ]);
 
   function GetMonuments(MonumentFactory) {
     // var vm = this;

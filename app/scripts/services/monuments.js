@@ -16,7 +16,7 @@
   .factory ( 'MonumentFactory', [
     '$http',
     GetMonuments
-  ])
+  ]);
 
   function GetMonuments( $http ) {
     return $http({
@@ -32,7 +32,7 @@
     });
 
   }
-  
+
 
 
 })();

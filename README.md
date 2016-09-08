@@ -17,6 +17,8 @@ Please take a look at it when you get a few minutes and see if you can put me on
 Thanks in advance,
 Kevin  
 
+P.S.  Now the factory's NOT working because I moved the function below the factory initiation and I get "GetMonuments was used before it was defined".  Can you tell me how to make that work?  
+
 
 
 
