@@ -8,13 +8,4 @@ angular.module ( 'p3App' )
     console.log('in factory: ' + x);
     return x;
   };
-
-
-
-
-
-
-
-
-
 });

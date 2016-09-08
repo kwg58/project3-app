@@ -8,26 +8,27 @@
 // * Controller of the p3App
 // */
 
-function GetMonuments(MonumentFactory) {
-  // var vm = this;
-  var monumentsList = MonumentFactory.GetMonuments;
-  console.log('Monuments: ' + monumentsList);
-  return monumentsList;
-  // MonumentFactory.get().$promise.then(function(response) {
-  //   console.log(response);
-  //   vm.monuments = response;
-  // });
-
-
-}
-
-// (function() {
+(function() {
   angular.module('p3App')
   .controller('MonumentIndexController', [
     'MonumentFactory',
     GetMonuments
-  ]);
+  ])
+
+  function GetMonuments(MonumentFactory) {
+    // var vm = this;
+    var monumentsList = MonumentFactory.GetMonuments;
+    // var monumentsList = MonumentService.query();
+    console.log('Monuments: ' + monumentsList);
+    return monumentsList;
+    // MonumentFactory.get().$promise.then(function(response) {
+    //   console.log(response);
+    //   vm.monuments = response;
+    // });
+
+
+  }
 
 
 
-// })();
+})();
